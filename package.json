@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website with overcomplicated tech",
+  "main": "src/index.ts",
+  "repository": "https://github.com/amusingzuna/portfolio.git",
+  "author": "Alexander",
+  "license": "MIT"
+}
