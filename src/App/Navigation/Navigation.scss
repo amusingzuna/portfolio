@@ -36,6 +36,7 @@
 .title {
     color: #fff;
     transition: color 250ms, transform 250ms, text-shadow 250ms;
+    cursor: pointer;
 
     &:hover {
         text-shadow: $base 0px 0px 5px;
@@ -71,7 +72,9 @@
     text-shadow: $base 0px 0px 5px;
 
     font-weight: 600;
-    transition: background 250ms, box-shadow 250ms, transform 250ms;
+    transition: background 250ms, box-shadow 250ms, transform 250ms;    
+
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.05);

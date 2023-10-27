@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router";
+
 import "./Navigation.scss";
 
 const splashes: string[] = [
@@ -11,24 +13,14 @@ const Splash = () => {
     return <p className="splash">{splashes[n]}</p>
 };
 
-const Buttons = () => {
-    return <>
-        <button className="nav-button">
-            Info
-        </button>
-        <button className="nav-button">
-            Projects
-        </button>
-        <button className="nav-button">
-            Contacts
-        </button>
-    </>;
-}
-
 const Navigation = () => {
+    const navigate = useNavigate();
+
     return <nav className="nav">
         <div className="left">
-            <h1 className="title">
+            <h1 onClick={() => {
+                navigate("/");
+            }} className="title">
                 zuna.cf
             </h1>
         </div>
@@ -36,7 +28,16 @@ const Navigation = () => {
             <Splash />
         </div>
         <div className="right">
-            <Buttons />
+            <button onClick={() => {
+                navigate("/projects");
+            }} className="nav-button">
+                Projects
+            </button>
+            <button onClick={() => {
+                navigate("/contacts");
+            }} className="nav-button">
+                Contact
+            </button>
         </div>
     </nav>;
 };
