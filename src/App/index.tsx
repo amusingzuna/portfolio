@@ -1,7 +1,11 @@
+import Navigation from './Navigation';
+
 import './App.scss';
 
 const App = () => {
-    return <h1>Hello.</h1>
+    return <div>
+        <Navigation />
+    </div>
 };
 
 export default App;
